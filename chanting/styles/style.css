@@ -1,0 +1,182 @@
+/*------------
+ Layout
+------------*/
+body {
+  font-family: "Aldus nova Pro", serif;
+}
+#titlepage, #copyright {
+  margin: 0 12%;
+  padding-top: 12%;
+}
+#cover img {
+  margin: 0 auto;
+  width: 100%;
+  padding: 0;
+}
+/*------------
+ Headings
+------------*/
+#cover h1, #titlepage h1, #copyright h1, #introquote h1 {
+  display: none;
+}
+h1 + p, h2 + p, h3 + p {
+  page-break-before: avoid;
+}
+h1 {
+  text-align: center;
+  font-style: italic;
+  font-size: 2.2em;
+  line-height: 1em;
+  margin: 1em 0;
+  font-family: "Palatino nova Pro Light", "Aldus nova Pro", serif;
+}
+h2 {
+  text-indent: 0%;
+  text-align: center;
+  font-style: italic;
+  font-size: 1.6em;
+  line-height: 1.1em;
+  margin: 1.2em 0 0.6em 0;
+  font-family: "Palatino nova Pro Light", "Aldus nova Pro", serif;
+}
+h3 {
+  text-indent: 0%;
+  text-align: center;
+  font-style: italic;
+  font-size: 1.4em;
+  line-height: 1em;
+  margin: 1.2em 0 0.6em 0;
+  font-family: "Palatino nova Pro Light", "Aldus nova Pro", serif;
+}
+h4 {
+  text-indent: 0%;
+  text-align: left;
+  font-style: italic;
+  font-size: 1.2em;
+  line-height: 1em;
+  margin: 1.2em 0 0.6em 0;
+  font-family: "Palatino nova Pro Light", "Aldus nova Pro", serif;
+}
+/*hidden*/
+h1.h, h2.h {
+  display: none;
+}
+/*------------
+ Paragraphs
+------------*/
+p {
+  margin: 0.3em 0;
+  text-indent:0;
+}
+/*note or comment*/
+p.n, div.n p {
+  font-size: 0.85em;
+  text-align: justify;
+  text-indent: 4%;
+}
+/*centered note or comment*/
+p.nc, div.nc p {
+  font-size: 0.85em;
+  text-align: center;
+  text-indent: 0;
+}
+/*first*/
+p.f {
+  margin-top: 0.9em;
+}
+/*pali*/
+p.p {
+  font-size: 1.2em;
+  line-height: 1.1em;
+}
+/*english small-sized for translation*/
+p.e {
+  font-size: 0.8em;
+  font-style: italic;
+  text-align: justify;
+}
+/*english full-sized for chanting*/
+p.ef {
+  font-size: 1.2em;
+  line-height: 1.1em;
+  font-style: italic;
+}
+/*english on same line*/
+/*english on same line full-sized*/
+span.eslf {
+  font-style: italic;
+  padding-left: 4%;
+}
+/*pali on same line*/
+/*bow down*/
+p.b {
+  text-transform: uppercase;
+  letter-spacing: 0.15em;
+  font-size: 0.8em;
+  font-family: "TheSans 5-Regular", sans-serif;
+  padding: 0.3em 0;
+}
+span.b {
+  letter-spacing: 0.15em;
+  font-size: 0.6em;
+  font-family: "TheSans 5-Regular", sans-serif;
+}
+span.bf {
+  letter-spacing: 0.15em;
+  font-size: 0.7em;
+  font-family: "TheSans 5-Regular", sans-serif;
+  text-transform: uppercase;
+}
+span.note {
+  font-family: "TheSans 4-SemiLight Caps", "TheSans 5-Regular", sans-serif;
+}
+/*text-indent*/
+/*indent; indent english lines*/
+.in, div.ein p.e, div.ein p.ef {
+  margin-left: 4%;
+}
+/*indent pali lines*/
+div.pin p.p, div.pin p.pf {
+  margin-left: 4%;
+}
+/*double-indent*/
+.i2 {
+  margin-left: 8%;
+}
+/*pad left*/
+.p4 {
+  padding-left: 4%;
+}
+.p8 {
+  padding-left: 8%;
+}
+/*center*/
+/*------------
+ formatting
+------------*/
+em {
+  text-decoration: underline;
+}
+strong {
+  font-weight: bold;
+}
+i {
+  font-style: italic;
+}
+p.stars {
+  text-indent: 0;
+  text-align: center;
+  letter-spacing: 0.5em;
+  margin-top: 1em;
+  margin-bottom: 0.6em;
+}
+.signatures {
+  padding-left: 40%;
+  font-style: italic;
+  margin-top: 1em;
+  margin-bottom: 0;
+}
+.signatures + .signatures {
+  margin-top: 0;
+  margin-bottom: 1em;
+}
